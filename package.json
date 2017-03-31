@@ -1,0 +1,32 @@
+{
+  "name": "example-node-express-mongodb",
+  "version": "1.0.0",
+  "description": "The example project that returns manages json documents persistence in a mongo db using express framework.",
+  "main": "server.js",
+  "scripts": {
+    "startMongoDB": "bash ./build-scripts/start-mongodb.sh",
+    "start:local": "npm run startMongoDB && node server.js",
+    "start": "node server.js",
+    "stopMongoDB": "bash ./build-scripts/stop-mongodb.sh",
+    "test": "./node_modules/mocha/bin/mocha --recursive ./test/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "log4js": "^1.1.1",
+    "log4js-node-mongodb": "^2.2.1",
+    "mongoose": "^4.9.0",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-unique-validator": "^1.0.5",
+    "morgan": "^1.8.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mongodb-download": "^2.1.6",
+    "sinon": "^2.0.0"
+  }
+}

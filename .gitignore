@@ -1,0 +1,7 @@
+*.log
+*.out
+node_modules/
+.DS_Store
+/*.env
+mongodb-download/
+.idea/
